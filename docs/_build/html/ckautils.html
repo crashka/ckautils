@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ckautils – CKA Utils &mdash; CKA Utils  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to CKA Utils documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            CKA Utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ckautils</span></code> – CKA Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ckautils.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ckautils.Config.__init__"><code class="docutils literal notranslate"><span class="pre">Config.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ckautils.Config.load"><code class="docutils literal notranslate"><span class="pre">Config.load()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ckautils.Config.config"><code class="docutils literal notranslate"><span class="pre">Config.config()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ckautils.MyLogger"><code class="docutils literal notranslate"><span class="pre">MyLogger</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ckautils.MyLogger.__init__"><code class="docutils literal notranslate"><span class="pre">MyLogger.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ckautils.MyLogger.notice"><code class="docutils literal notranslate"><span class="pre">MyLogger.notice()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ckautils.rankdata"><code class="docutils literal notranslate"><span class="pre">rankdata()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ckautils.typecast"><code class="docutils literal notranslate"><span class="pre">typecast()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ckautils.parse_argv"><code class="docutils literal notranslate"><span class="pre">parse_argv()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ckautils.prettyprint"><code class="docutils literal notranslate"><span class="pre">prettyprint()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CKA Utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ckautils</span></code> – CKA Utils</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ckautils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ckautils">
+<span id="ckautils-cka-utils"></span><h1><a class="reference internal" href="#module-ckautils" title="ckautils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ckautils</span></code></a> – CKA Utils<a class="headerlink" href="#module-ckautils" title="Link to this heading"></a></h1>
+<p>Collection of simple utilities that I have been copying and pasting into most of the
+multi-module projects I have worked on.  Moving to its own package for reusability across
+projects.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="ckautils.Config">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ckautils.</span></span><span class="sig-name descname"><span class="pre">Config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ckautils.Config" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Manages YAML config information.  Features include:</p>
+<ul class="simple">
+<li><p>Loading from multiple config files</p></li>
+<li><p>Caching of aggregated config file parameters</p></li>
+<li><p>Named “profiles” to override ‘default’ profile parameters</p></li>
+</ul>
+<p>Config file structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="n">default</span><span class="p">:</span>
+  <span class="n">my_section</span><span class="p">:</span>
+    <span class="n">my_param</span><span class="p">:</span> <span class="n">value</span>
+<span class="n">alt_profile</span><span class="p">:</span>
+  <span class="n">my_section</span><span class="p">:</span>
+    <span class="n">my_param</span><span class="p">:</span> <span class="n">alt_value</span>  <span class="c1"># overwrites value from ``default`` profile</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="ckautils.Config.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ckautils.Config.__init__" title="Link to this definition"></a></dt>
+<dd><p>Note that <code class="docutils literal notranslate"><span class="pre">files</span></code> can be specified as an iterable, or a comma-separated
+list of file names (no spaces).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ckautils.Config.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reload</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ckautils.Config.load" title="Link to this definition"></a></dt>
+<dd><p>Load a config file, overwriting existing parameter entries at the section
+level (i.e. direct children within a section).  Deeper merging within these
+top-level parameters is not supported.  Note that additional config files
+can be loaded at any time.  A config file that has already been loaded will
+be politely skipped, with a <code class="docutils literal notranslate"><span class="pre">False</span></code> return value being the only rebuke.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ckautils.Config.config">
+<span class="sig-name descname"><span class="pre">config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">profile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ckautils.Config.config" title="Link to this definition"></a></dt>
+<dd><p>Get parameters for configuration section (empty dict is returned if section is
+not found).  If <code class="docutils literal notranslate"><span class="pre">profile</span></code> is specified, the parameter values for that profile
+override values from the <cite>‘default’</cite> profile (which must exist).  If the <code class="docutils literal notranslate"><span class="pre">safe</span></code>
+flag is specified, a deep copy is returned so the caller will not inadvertently
+change the cached config.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ckautils.MyLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ckautils.</span></span><span class="sig-name descname"><span class="pre">MyLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ckautils.MyLogger" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></p>
+<p>Adds additional logging levels.  Copied from from
+<a class="reference external" href="https://stackoverflow.com/questions/2183233/">https://stackoverflow.com/questions/2183233/</a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ckautils.MyLogger.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ckautils.MyLogger.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the logger with a name and an optional level.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ckautils.MyLogger.notice">
+<span class="sig-name descname"><span class="pre">notice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ckautils.MyLogger.notice" title="Link to this definition"></a></dt>
+<dd><p>Currently just write to default logging channel, later perhaps write to separate
+channel, or store in database</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ckautils.rankdata">
+<span class="sig-prename descclassname"><span class="pre">ckautils.</span></span><span class="sig-name descname"><span class="pre">rankdata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Number</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Number</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ckautils.rankdata" title="Link to this definition"></a></dt>
+<dd><p>Standalone implementation of <code class="docutils literal notranslate"><span class="pre">scipy.stats.rankdata</span></code>.  Adapted from
+<a class="reference external" href="https://stackoverflow.com/a/3071441">https://stackoverflow.com/a/3071441</a>, with the following added:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">method</span></code> arg, with support for ‘average’ (default) and ‘min’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reverse</span></code> flag, with <code class="docutils literal notranslate"><span class="pre">True</span></code> (default) signifying descending sort order
+(i.e. the highest value in <code class="docutils literal notranslate"><span class="pre">a</span></code> has a rank of 1, as opposed to <cite>len(a)</cite>)</p></li>
+</ul>
+<p>Note that return rankings with be type <code class="docutils literal notranslate"><span class="pre">float</span></code> for <code class="docutils literal notranslate"><span class="pre">method='average'</span></code>
+and <code class="docutils literal notranslate"><span class="pre">int</span></code> for <code class="docutils literal notranslate"><span class="pre">method='min'</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ckautils.typecast">
+<span class="sig-prename descclassname"><span class="pre">ckautils.</span></span><span class="sig-name descname"><span class="pre">typecast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Number</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">bool</span></span></span><a class="headerlink" href="#ckautils.typecast" title="Link to this definition"></a></dt>
+<dd><p>Simple logic for casting a string value to the appropriate type; usable for
+parameters coming from a program command line or HTML form.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ckautils.parse_argv">
+<span class="sig-prename descclassname"><span class="pre">ckautils.</span></span><span class="sig-name descname"><span class="pre">parse_argv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">argv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ckautils.parse_argv" title="Link to this definition"></a></dt>
+<dd><p>Takes a list of arguments (typically a slice of sys.argv), which may be a
+combination of bare agruments or kwargs-style constructions (e.g. “key=value”) and
+returns a tuple of <code class="docutils literal notranslate"><span class="pre">args</span></code> and <code class="docutils literal notranslate"><span class="pre">kwargs</span></code>.  For both <code class="docutils literal notranslate"><span class="pre">args</span></code> and <code class="docutils literal notranslate"><span class="pre">kwargs</span></code>, we
+attempt to cast the value to the proper type (e.g. int, float, bool, or None).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ckautils.prettyprint">
+<span class="sig-prename descclassname"><span class="pre">ckautils.</span></span><span class="sig-name descname"><span class="pre">prettyprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_keys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noprint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#ckautils.prettyprint" title="Link to this definition"></a></dt>
+<dd><p>Nicer version of pprint (which is actually kind of ugly).</p>
+<p>Note: assumes that input data can be dumped to json (typically a list or dict).</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to CKA Utils documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Crash.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
