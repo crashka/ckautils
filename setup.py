@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='ckautils',
     version='0.1',
-    packages=find_packages(include=[]),
+    py_modules=['ckautils'],
     url='',
     license='',
     author='crash',
     author_email='',
     description='',
-    install_requires=['pyyaml'],
-    entry_points={'console_scripts': []}
+    install_requires=['pyyaml']
 )
